@@ -1,5 +1,4 @@
 package modelo;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,8 +8,10 @@ public class Nota {
      private double examenFinal;
      private double promedio;
 
+    public Nota(){
+    }
 
-     public Nota( List<Double> parciales,double medioCurso, double examenFinal, double promedio) {
+    public Nota( List<Double> parciales,double medioCurso, double examenFinal, double promedio) {
          this.parciales=parciales;
          this.medioCurso = medioCurso;
          this.examenFinal = examenFinal;
@@ -20,6 +21,10 @@ public class Nota {
 
     public List<Double> getParciales() {
         return parciales;
+    }
+
+    public void addParciales(Double nota){
+        parciales.add(nota);
     }
 
     public double getExamenFinal() {
@@ -44,9 +49,4 @@ public class Nota {
     public void setExamenFinal(double examenFinal) {
         this.examenFinal = examenFinal;
     }
-
-    public void setParciales(List<Double> parciales) {
-        this.parciales = parciales;
-    }
-     
 }

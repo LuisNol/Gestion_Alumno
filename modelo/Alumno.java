@@ -1,7 +1,5 @@
 package modelo;
 
-
-
 public class Alumno{
     private int cedula;
     private String nombre;
@@ -14,6 +12,7 @@ public class Alumno{
         this.nombre = nombre;
         this.edad = edad;
         this.grado = grado;
+        this.nota = new Nota();
     }
 
     public Alumno(int cedula, String nombre, int edad, String grado,Nota nota){
@@ -22,11 +21,10 @@ public class Alumno{
         this.edad = edad;
         this.grado = grado;
         this.nota = nota;
-
     }
 
     public Alumno(){
-
+        this.nota = new Nota();
     }
 
     public int getCedula() {
@@ -56,16 +54,16 @@ public class Alumno{
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+    public void setNota(Nota nota) {
+        this.nota = nota;
+    }
+
+    public Nota getNota() {
+        return nota;
+    }
     
     public void setGrado(String grado) {   
         this.grado = grado;
-     }
-
-     public Nota getNota() {
-         return nota;
-     }
-     public void setNota(Nota nota) {
-         this.nota = nota;
-     }
-     
+    }
 }
