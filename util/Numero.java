@@ -1,5 +1,7 @@
 package util;
 
+import java.util.Random;
+
 public class Numero {
 
     /**
@@ -11,7 +13,7 @@ public class Numero {
      * @return retorna una nota para el alumno
      */
     public static int numeroAleatorio(int minimo, int maximo){
-        // input your code
-        return 0;
+         Random rnd = new Random();
+         return rnd.nextInt(maximo - minimo) + minimo;
     }
 }
