@@ -60,4 +60,12 @@ public class Alumno{
     public void setGrado(String grado) {   
         this.grado = grado;
      }
+
+     public Nota getNota() {
+         return nota;
+     }
+     public void setNota(Nota nota) {
+         this.nota = nota;
+     }
+     
 }
