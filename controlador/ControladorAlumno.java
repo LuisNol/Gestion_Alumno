@@ -1,15 +1,10 @@
 package controlador;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import modelo.Alumno;
 import util.Numero;
 
 public class ControladorAlumno{
     
     private Alumno alumno;
-
     public ControladorAlumno(Alumno alumno){
         this.alumno = alumno;
     }
@@ -24,6 +19,4 @@ public class ControladorAlumno{
             alumno.getNota().addParciales(Double.valueOf(Numero.numeroAleatorio(0, 20)));
         }
     }
-
-    
 }
