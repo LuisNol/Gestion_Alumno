@@ -16,7 +16,7 @@ public class ControladorAlumno{
      */
     public void generarNotaParciales(int cantidad){
         for(int i = 0 ; i < cantidad ; i++){
-            alumno.getNota().addParciales(Double.valueOf(Numero.numeroAleatorio(0, 20)));
+            
             System.out.println("hola");
         }
     }

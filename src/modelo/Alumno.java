@@ -5,17 +5,13 @@ public class Alumno{
     private String nombre;
     private int edad;
     private String grado;
-    private Nota nota;
+    private double nota;
 
-    public Alumno(int cedula, String nombre, int edad, String grado) {
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.edad = edad;
-        this.grado = grado;
-        this.nota = new Nota();
+    public Alumno(){
+        
     }
 
-    public Alumno(int cedula, String nombre, int edad, String grado,Nota nota){
+    public Alumno(int cedula, String nombre, int edad, String grado, double nota) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.edad = edad;
@@ -23,8 +19,12 @@ public class Alumno{
         this.nota = nota;
     }
 
-    public Alumno(){
-        this.nota = new Nota();
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
     }
 
     public int getCedula() {
@@ -53,14 +53,6 @@ public class Alumno{
 
     public void setEdad(int edad) {
         this.edad = edad;
-    }
-
-    public void setNota(Nota nota) {
-        this.nota = nota;
-    }
-
-    public Nota getNota() {
-        return nota;
     }
     
     public void setGrado(String grado) {   
