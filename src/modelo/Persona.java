@@ -6,13 +6,21 @@ public class Persona {
     private String genero;
     private String direccion;
     private String telefono;
-    
+
+    public Persona(){
+    }
+
     public Persona(String nombre, int edad, String genero, String direccion, String telefono) {
         this.nombre = nombre;
         this.edad = edad;
         this.genero = genero;
         this.direccion = direccion;
         this.telefono = telefono;
+    }
+
+    public Persona(String nombre, int edad){
+        this.nombre = nombre;
+        this.edad = edad;
     }
     
     // Getters y Setters

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.processing.Generated;
 
+import controlador.LoginControlador;
 import data.GeneraDatos;
 import modelo.Alumno;
 import modelo.Curso;
@@ -13,6 +14,8 @@ import vista.LoginUI;
 import data.GeneraDatos;
 
 public class App {
+    private static Alumno alumno;
+    private static Docente docente;
     public static void main(String[] args) throws Exception {
 
         //Actores
@@ -22,12 +25,13 @@ public class App {
         
         //recursos
         GeneraDatos generaDatos = new GeneraDatos(alumnos,docentes,cursos);
+        LoginControlador loginControlador = new LoginControlador(alumnos, docentes);
         AlumnoUI alumnoUI = new AlumnoUI();
-        LoginUI loginUI = new LoginUI();
+        LoginUI loginUI = new LoginUI(loginControlador);
 
         //logica
         generaDatos.generarDatosAlumno();
-        loginUI.iniciarSesion();
-    }
+        alumno = loginUI.iniciarSesion();
 
+    }
 }

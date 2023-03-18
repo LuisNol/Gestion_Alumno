@@ -20,3 +20,7 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 # Gestion de Alumno
  Gestionar con respecto a sus notas del alumo, actualmente la vista se encuentra en consola, pero se piensa migrar a una UI grafica
+
+# Modelo HUML
+
+[![Calidad-Arquitectura-Gestion-Alumnos.png](https://i.postimg.cc/N0g6jjP3/Calidad-Arquitectura-Gestion-Alumnos.png)](https://postimg.cc/68m2HtKc)

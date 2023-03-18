@@ -1,20 +1,24 @@
 package modelo;
 
-public class Alumno{
+public class Alumno extends Persona{
     private int cedula;
-    private String nombre;
-    private int edad;
     private String grado;
     private double nota;
 
     public Alumno(){
-        
+        super();
     }
 
-    public Alumno(int cedula, String nombre, int edad, String grado, double nota) {
+    public Alumno(int cedula,String nombre, int edad, String grado, double nota){
+        super(nombre,edad);
+        this.cedula = cedula;  
+        this.grado = grado;
+        this.nota = nota;
+    }
+
+    public Alumno(int cedula, String nombre, int edad, String grado, double nota,  String genero, String direccion, String telefono) {
+        super(nombre, edad, genero, direccion, telefono);
         this.cedula = cedula;
-        this.nombre = nombre;
-        this.edad = edad;
         this.grado = grado;
         this.nota = nota;
     }
@@ -31,14 +35,6 @@ public class Alumno{
         return cedula;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
     public String getGrado() {
         return grado;
     }
@@ -46,22 +42,10 @@ public class Alumno{
     public void setCedula(int cedula) {
         this.cedula = cedula;
     }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
     
     public void setGrado(String grado) {   
         this.grado = grado;
     }
 
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
-    }
+    
 }
