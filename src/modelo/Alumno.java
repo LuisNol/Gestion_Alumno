@@ -58,4 +58,10 @@ public class Alumno{
     public void setGrado(String grado) {   
         this.grado = grado;
     }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
+    }
 }
