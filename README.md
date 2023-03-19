@@ -23,4 +23,10 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 # Modelo HUML
 
-[![Calidad-Arquitectura-Gestion-Alumnos.png](https://i.postimg.cc/N0g6jjP3/Calidad-Arquitectura-Gestion-Alumnos.png)](https://postimg.cc/68m2HtKc)
+[![1.png](https://i.postimg.cc/mkNtshyn/1.png)](https://postimg.cc/bSrz0yM0)
+
+[![2.png](https://i.postimg.cc/PxTsrcg3/2.png)](https://postimg.cc/R3sbgPVK)
+
+[![3.png](https://i.postimg.cc/151h7kdg/3.png)](https://postimg.cc/z37cVc85)
+
+[![4.png](https://i.postimg.cc/c47qpDqF/4.png)](https://postimg.cc/Lns0f38P)
