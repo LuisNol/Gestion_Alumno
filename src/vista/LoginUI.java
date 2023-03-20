@@ -1,8 +1,5 @@
 package vista;
-
-import java.util.List;
 import java.util.Scanner;
-
 import controlador.LoginControlador;
 import modelo.Alumno;
 import util.LimpiarPantalla;
@@ -16,25 +13,27 @@ public class LoginUI {
     }
 
     public Alumno iniciarSesion() {
-        Scanner input = new Scanner(System.in);
-        int cedula;
-        Alumno alumno;
-        do {
-            System.out.println("-------------------------------------------------");
-            System.out.println("|                    BIENVENIDO                 |");
-            System.out.println("|                    INICIAR SESIÓN             |");
-            System.out.println("-------------------------------------------------");
-            System.out.print("Ingresar Cedula: ");
-            cedula = input.nextInt();
-            alumno = loginControlador.validarUsuario(cedula);
-            if(alumno == null){
-                LimpiarPantalla.cls();
-            }
-        } while (alumno == null);
+        try (Scanner input = new Scanner(System.in)) {
+            int cedula;
+            Alumno alumno;
+            
+            do {
+                System.out.println("-------------------------------------------------");
+                System.out.println("|                    BIENVENIDO                 |");
+                System.out.println("|                    INICIAR SESIÓN             |");
+                System.out.println("-------------------------------------------------");
+                System.out.print("Ingresar Cedula: ");
+                cedula = input.nextInt();
+                alumno = loginControlador.validarUsuario(cedula);
+                if(alumno == null){
+                    LimpiarPantalla.cls();
+                }
+            } while (alumno == null);
 
-        System.out.println("Inicio de sesión exitoso. ¡Bienvenido!");
+            System.out.println("Inicio de sesión exitoso. ¡Bienvenido!");
 
-        return alumno;
+            return alumno;
+        }
     }
 
 }
