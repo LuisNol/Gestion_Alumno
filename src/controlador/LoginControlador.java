@@ -14,16 +14,20 @@ public class LoginControlador {
     
     public LoginControlador(List<Alumno> alumnos,List<Docente> docentes){
         this.alumnos = alumnos;
+
         this.docentes = docentes;
         this.cursos = cursos;
     }
 
-    public boolean validarUsuario(int cedula){
-        boolean estadoPorValidar = false;
+    public Alumno validarUsuario(int cedula){
+        Alumno alumnoPorEncontrar = null;
         for(Alumno alumno : this.alumnos){
-            estadoPorValidar = alumno.getCedula()==cedula ? true:false;
+            if(alumno.getCedula() == cedula){
+                alumnoPorEncontrar = alumno;
+                break;
+            }
         }
-        return estadoPorValidar;
+        return alumnoPorEncontrar;
     }
 
 }
