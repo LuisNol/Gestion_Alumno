@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+
 import data.GeneraDatos;
 import modelo.Alumno;
 import modelo.Curso;
