@@ -29,7 +29,10 @@ public class LoginControlador {
     public Docente validarDocente(int cedulaDocente){
         Docente docentePorEncontrar = null;
         for(Docente docente:this.docentes){
-            //debe encontrar aldocente por su cedulaDOcente
+            if(docente.getCedulaDocente()==cedulaDocente){
+                docentePorEncontrar = docente;
+                break;
+            }
         }
         return docentePorEncontrar;
     }
