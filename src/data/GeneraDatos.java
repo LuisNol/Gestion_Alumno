@@ -51,5 +51,15 @@ public class GeneraDatos {
 
     public void generarDatosDocente(){
         docentes.add(new Docente(9873453, "Gardin", 34, "masculino", "Tingo Maria", "987569844", "redes", "Redes y seguridad", "magister"));
+        docentes.add(new Docente(101234567, "Ana Rodriguez", 35, "Matemáticas"));
+        docentes.add(new Docente(205678912, "Juan Perez", 42, "Historia"));
+        docentes.add(new Docente(308765432, "María García", 28, "Física"));
+        docentes.add(new Docente(401234567, "Pedro Gomez", 39, "Química"));
+        docentes.add(new Docente(504567890, "Laura Ramirez", 45, "Literatura"));
+        docentes.add(new Docente(607654321, "Jorge Vargas", 52, "Economía"));
+        docentes.add(new Docente(701234567, "Marta Martinez", 31, "Biología"));
+        docentes.add(new Docente(804567890, "Pablo Cruz", 48, "Inglés"));
+        docentes.add(new Docente(907654321, "Carla Herrera", 37, "Educación física"));
+        docentes.add(new Docente(100123456, "Diego Castro", 29, "Informática"));
     }
 }
