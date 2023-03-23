@@ -3,20 +3,16 @@ package controlador;
 import java.util.List;
 
 import modelo.Alumno;
-import modelo.Curso;
 import modelo.Docente;
 
 public class LoginControlador {
 
     private List<Alumno> alumnos;
     private List<Docente> docentes;
-    private List<Curso> cursos;
     
     public LoginControlador(List<Alumno> alumnos,List<Docente> docentes){
         this.alumnos = alumnos;
-
         this.docentes = docentes;
-        this.cursos = cursos;
     }
 
     public Alumno validarUsuario(int cedula){
@@ -28,6 +24,14 @@ public class LoginControlador {
             }
         }
         return alumnoPorEncontrar;
+    }
+
+    public Docente validarDocente(int cedulaDocente){
+        Docente docentePorEncontrar = null;
+        for(Docente docente:this.docentes){
+            //debe encontrar aldocente por su cedulaDOcente
+        }
+        return docentePorEncontrar;
     }
 
 }
