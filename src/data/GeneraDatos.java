@@ -1,6 +1,4 @@
 package data;
-
-import java.util.ArrayList;
 import java.util.List;
 import modelo.Alumno;
 import modelo.Curso;
@@ -10,8 +8,6 @@ public class GeneraDatos {
     private List<Alumno> alumnos;
     private List<Docente> docentes;
     private List<Curso> cursos;
-
-    
 
     public GeneraDatos(List<Alumno> alumnos, List<Docente> docentes, List<Curso> cursos) {
         this.alumnos = alumnos;
@@ -51,5 +47,9 @@ public class GeneraDatos {
         alumnos.add( new Alumno(56789012, "Luis Hernandez", 14, "8th Grade", 75.5));
         alumnos.add( new Alumno(67890123, "Carmen Lopez", 13, "7th Grade", 70.0));
         alumnos.add(new Alumno(78901234, "Carlos Martinez", 12, "6th Grade", 65.5));
+    }
+
+    public void generarDatosDocente(){
+        docentes.add(new Docente(9873453, "Gardin", 34, "masculino", "Tingo Maria", "987569844", "redes", "Redes y seguridad", "magister"));
     }
 }
