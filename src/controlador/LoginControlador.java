@@ -1,7 +1,5 @@
 package controlador;
-
 import java.util.List;
-
 import modelo.Alumno;
 import modelo.Docente;
 
@@ -36,5 +34,4 @@ public class LoginControlador {
         }
         return docentePorEncontrar;
     }
-
 }
