@@ -10,6 +10,7 @@ public class AppUI {
 
     private LoginControlador loginControlador;
     private LoginUI loginUI;
+    private Scanner input = new Scanner(System.in);
     
     public AppUI(List<Alumno> alumnos, List<Docente> docentes){
         this.loginControlador =  new LoginControlador(alumnos, docentes);
@@ -43,7 +44,7 @@ public class AppUI {
     }
 
     private void menu(Alumno alumno){
-        Scanner input = new Scanner(System.in);
+        
         int choice;
 
         System.out.println("-------------------------------------------------");
