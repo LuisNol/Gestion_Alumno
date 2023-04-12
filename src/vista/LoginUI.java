@@ -7,13 +7,14 @@ import util.LimpiarPantalla;
 public class LoginUI {
 
     LoginControlador loginControlador;
+    private Scanner input = new Scanner(System.in);
 
     public LoginUI(LoginControlador loginControlador) {
         this.loginControlador = loginControlador;
     }
 
     public Alumno iniciarSesion(){
-        Scanner input = new Scanner(System.in);
+        
         int cedula;
         Alumno alumno;
         
