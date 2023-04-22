@@ -18,3 +18,9 @@ test/resources/projects/maven/salut/testGradle
 test-temp
 
 .vscode/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
